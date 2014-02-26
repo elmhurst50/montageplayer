@@ -1,0 +1,23 @@
+{
+    "name": "samjoyce777/montageplayer",
+    "description": "Plays a montage based on imported images from source",
+    "version": "0.1",
+    "type": "git",
+    "keywords": ["image", "montage"],
+    "homepage": "http://samjoyce.co.uk",
+    "time": "2014-02",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Joyce",
+            "email": "samjoyce777@gmail.com",
+            "homepage": "http://www.samjoyce.co.uk",
+            "role": "Developer"
+        }],
+    "autoload": {
+        "psr-0": {
+            "samjoyce\\montageplayer": "src",
+            "samjoyce\\montageinterface": "src"
+        }
+    }
+}
