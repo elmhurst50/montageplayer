@@ -86,19 +86,19 @@ class montagePlayer {
     /**
      * Loads the music if required
      */
-    function loadMusic() {
-        if ($this->settings["music"] != 0 && $this->montage->getMusic() !== false && $this->showMusicOnOff == 'on') {
-            echo <<<EOD
+     function loadMusic() {
+        if ($this->settings["music"] != 0 && $this->montage->getMusic() !== false && $this->montage->showMusicOnOff == 'on') {
+            echo '
             <audio id="background-music" autoplay loop>
-                <source src="uploads/$this->id/music/$this->id.mp3" type="audio/mpeg">
+                <source src="'. $this->montage->getMusic() .'" type="audio/mpeg">
                 Your computer does not support sound
-            </audio>
-EOD;
+            </audio>';
+            
             echo '<script>'
             . 'music = document.getElementById("background-music");'
             . 'music.volume = ' . $this->settings["music"]
             . '</script>';
         }
-    }
+     }
 
 }
