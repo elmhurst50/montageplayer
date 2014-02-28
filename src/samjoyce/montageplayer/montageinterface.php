@@ -1,6 +1,6 @@
 <?php
 
-namespace samjoyce\montageinterface;
+namespace samjoyce\montageplayer;
 
 interface montageInterface {
 

@@ -16,8 +16,7 @@
         }],
     "autoload": {
         "psr-0": {
-            "samjoyce\\montageplayer": "src",
-            "samjoyce\\montageinterface": "src"
-        }
+            "samjoyce\\montageplayer": "src"
+           }
     }
 }
